@@ -280,18 +280,16 @@ display:flex;
 gap: 12px;
 align-items: center;
 }
-.swatch{
-width: 44px;
-height: 44px;
-border-radius: 16px;
-box-shadow: 0 1px 0 rgba(0,0,0,.03);
+.product-photo{
+width: 64px;
+height: 64px;
+border-radius: 18px;
+object-fit: cover;
+background: rgba(255,255,255,.6);
 border: 1px solid var(--ring);
+box-shadow: 0 1px 0 rgba(0,0,0,.03);
+flex: 0 0 auto;
 }
-.swatch.blue{ background: var(--blue); }
-.swatch.red{ background: var(--red); }
-.swatch.orange{ background: var(--orange); }
-.swatch.green{ background: var(--green); }
-.swatch.yellow{ background: var(--yellow); }
 
 .card-title{
 font-weight: 720;

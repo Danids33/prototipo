@@ -17,6 +17,7 @@
       name: "GAN 14 Pro 3×3 (MagLev)",
       brand: "GAN",
       tags: ["3x3", "maglev", "premium", "speedcube"],
+      imageFile: "gan 14 pro.png",
       price: 64.99,
       rating: 4.8,
       accent: "blue",
@@ -26,6 +27,7 @@
       name: "MoYu WRM 2021 3×3",
       brand: "MoYu",
       tags: ["3x3", "control", "smooth"],
+      imageFile: "MoYu WRM 2021 3×3.png",
       price: 34.9,
       rating: 4.6,
       accent: "green",
@@ -35,6 +37,7 @@
       name: "MoYu RS3M V5 (Ball-Core)",
       brand: "MoYu",
       tags: ["3x3", "value", "ball-core", "magnetic"],
+      imageFile: "MoYu RS3M V5 (Ball-Core).png",
       price: 24.9,
       rating: 4.7,
       accent: "orange",
@@ -44,29 +47,34 @@
       name: "QiYi Tornado V3 (Pioneer)",
       brand: "QiYi",
       tags: ["3x3", "quiet", "pioneer", "fast"],
+      imageFile: "QiYi Tornado V3 (Pioneer).png",
       price: 44.0,
       rating: 4.7,
       accent: "red",
     },
     {
-      id: "gan-562-2x2",
-      name: "GAN 562 2×2",
+      id: "gan-562-5x5",
+      name: "GAN 562 5×5",
       brand: "GAN",
-      tags: ["2x2", "magnetic", "compact"],
+      tags: ["5x5", "magnetic", "compact"],
+      imageFile: "GAN 562 5x5.png",
       price: 26.5,
       rating: 4.5,
       accent: "yellow",
     },
     {
-      id: "moyu-aochuang-wr-m-5x5",
-      name: "MoYu AoChuang WR M 5×5",
+      id: "moyu-weipo-wr-s-2x2",
+      name: "MoYu WeiPo WR S 2x2",
       brand: "MoYu",
       tags: ["5x5", "stability", "magnetic"],
+      imageFile: "MoYu WeiPo WR S 2x2 (Magnetic).png",
       price: 39.99,
       rating: 4.4,
       accent: "blue",
     },
   ];
+
+  const IMAGE_DIR = "C:/Users/ASUS/OneDrive - Pontificia Universidad Católica del Ecuador/Documentos/img/";
 
   const cart = new Map(); // productId -> qty
 
@@ -110,12 +118,15 @@
       const card = document.createElement("article");
       card.className = "card";
 
+      const imageSrc = p.imageFile ? `${IMAGE_DIR}${encodeURIComponent(p.imageFile)}` : "";
+      const imageAlt = p.name ? `Foto de ${p.name}` : "Foto del producto";
+
       card.innerHTML = `
         <div class="card-top">
-          <div class="swatch ${p.accent}" aria-hidden="true"></div>
+          <img class="product-photo" src="${imageSrc}" alt="${escapeHtml(imageAlt)}" loading="lazy" decoding="async" />
           <div class="card-meta">
             <div class="card-title">${escapeHtml(p.name)}</div>
-            <div class="card-sub">${escapeHtml(p.brand)} · ★ ${p.rating.toFixed(1)}</div>
+            <div class="card-sub">${escapeHtml(p.brand)}</div>
           </div>
         </div>
         <div class="chips">
