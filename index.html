@@ -81,6 +81,13 @@
                 <span class="count"><span id="productCount">0</span> productos</span>
             </div>
 
+            <div class="filters" id="categoryFilters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="3x3">3x3</button>
+                <button class="filter-btn" data-filter="5x5">5x5</button>
+                <button class="filter-btn" data-filter="2x2">2x2</button>
+            </div>
+
             <div class="grid" id="productGrid"></div>
         </section>
     </main>
@@ -88,6 +95,13 @@
     <footer class="footer">
         <p>© <span id="year"></span> Speedcubes</p>
     </footer>
+</div>
+
+<div id="imageModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+        <button id="closeModal" class="modal-close" aria-label="Cerrar">&times;</button>
+        <img id="modalImage" src="" alt="Imagen ampliada" />
+    </div>
 </div>
 
 <script src="./app.js"></script>
