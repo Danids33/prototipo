@@ -1,110 +1,119 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Speedcubes — Cubos para speedcubing</title>
     <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-<div class="bg-accent" aria-hidden="true"></div>
+    <div class="bg-accent" aria-hidden="true"></div>
 
-<div class="container">
-    <header class="navbar">
-        <a class="brand" href="#" aria-label="Speedcubes (inicio)">
-          <span class="logo" aria-hidden="true">
-            <span class="sq b"></span><span class="sq r"></span>
-            <span class="sq g"></span><span class="sq y"></span>
-          </span>
-            <span class="brand-text">
-            <span class="brand-title">Speedcubes</span>
-            <span class="brand-subtitle">Cubos y recambios para entrenar</span>
-          </span>
-        </a>
+    <div class="container">
+        <header class="navbar">
+            <a class="brand" href="#" aria-label="Speedcubes (inicio)">
+                <span class="logo" aria-hidden="true">
+                    <span class="sq b"></span><span class="sq r"></span>
+                    <span class="sq g"></span><span class="sq y"></span>
+                </span>
+                <span class="brand-text">
+                    <span class="brand-title">Speedcubes</span>
+                    <span class="brand-subtitle">Cubos y recambios para entrenar</span>
+                </span>
+            </a>
 
-        <div class="nav-actions">
-            <label class="search desktop-only">
-                <input id="searchInputDesktop" type="search" placeholder="Buscar cubos, marcas, tipo…" />
-            </label>
+            <div class="nav-actions" style="position: relative;">
+                <label class="search desktop-only">
+                    <input id="searchInputDesktop" type="search" placeholder="Buscar cubos, marcas, tipo…" />
+                </label>
 
-            <button class="cart" id="cartBtn" type="button" aria-label="Carrito">
-                <span class="desktop-only">Carrito</span>
-                <span class="badge" id="cartCount">0</span>
-            </button>
-        </div>
+                <button class="cart" id="cartBtn" type="button" aria-label="Carrito">
+                    <span class="desktop-only">Carrito</span>
+                    <span class="badge" id="cartCount">0</span>
+                </button>
 
-        <label class="search mobile-only">
-            <input id="searchInputMobile" type="search" placeholder="Buscar cubos, marcas, tipo…" />
-        </label>
-    </header>
-
-    <main>
-        <section class="hero" aria-label="Portada">
-            <div class="hero-card">
-                <div class="pill">
-                    <span>Envío en 24–72 h (según zona)</span>
+                <div id="cartDropdown" class="cart-dropdown" aria-hidden="true">
+                    <div id="cartItems" class="cart-items"></div>
+                    <div class="cart-total">Total: <span id="cartTotalValue">0,00 €</span></div>
+                    <button class="btn btn-pay" id="payBtn" type="button">Pagar</button>
                 </div>
+            </div>
 
-                <h1 class="hero-title">
-                    Cubos que se sienten bien al girar.
-                    <span class="gradient-traffic">Sin humo.</span>
-                </h1>
+            <label class="search mobile-only">
+                <input id="searchInputMobile" type="search" placeholder="Buscar cubos, marcas, tipo…" />
+            </label>
+        </header>
 
-                <p class="hero-copy">
-                    Una selección pequeña, probada y fácil de elegir: 3×3 para diario, opciones silenciosas, y modelos
-                    con buena relación calidad/precio. Si no sabes cuál, empieza por los más populares.
-                </p>
+        <main>
+            <section class="hero" aria-label="Portada">
+                <div class="hero-card">
+                    <div class="pill">
+                        <span>Envío en 24–72 h (según zona)</span>
+                    </div>
 
-                <div class="hero-cta">
-                    <div class="cta" role="note" aria-label="Recomendación">
-                        <span>Tip: usa el buscador por “3x3”, “quiet”, “maglev”…</span>
+                    <h1 class="hero-title">
+                        Cubos que se sienten bien al girar.
+                        <span class="gradient-traffic">Sin humo.</span>
+                    </h1>
+
+                    <p class="hero-copy">
+                        Una selección pequeña, probada y fácil de elegir: 3×3 para diario, opciones silenciosas, y
+                        modelos
+                        con buena relación calidad/precio. Si no sabes cuál, empieza por los más populares.
+                    </p>
+
+                    <div class="hero-cta">
+                        <div class="cta" role="note" aria-label="Recomendación">
+                            <span>Tip: usa el buscador por “3x3”, “silencioso”, “magnetico”…</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="hero-squares" aria-hidden="true">
-                <div class="tile blue"></div>
-                <div class="tile red"></div>
-                <div class="tile orange"></div>
-                <div class="tile green"></div>
-                <div class="tile white"></div>
-                <div class="tile yellow"></div>
-            </div>
-        </section>
-
-        <section class="section" aria-label="Catálogo">
-            <div class="section-head">
-                <div>
-                    <h2>Catálogo</h2>
-                    <p>Busca por marca o por tipo. Añade al carrito y sigue mirando.</p>
+                <div class="hero-squares" aria-hidden="true">
+                    <div class="tile blue"></div>
+                    <div class="tile red"></div>
+                    <div class="tile orange"></div>
+                    <div class="tile green"></div>
+                    <div class="tile white"></div>
+                    <div class="tile yellow"></div>
                 </div>
-                <span class="count"><span id="productCount">0</span> productos</span>
-            </div>
+            </section>
 
-            <div class="filters" id="categoryFilters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="3x3">3x3</button>
-                <button class="filter-btn" data-filter="5x5">5x5</button>
-                <button class="filter-btn" data-filter="2x2">2x2</button>
-            </div>
+            <section class="section" aria-label="Catálogo">
+                <div class="section-head">
+                    <div>
+                        <h2>Catálogo</h2>
+                        <p>Busca por marca o por tipo. Añade al carrito y sigue mirando.</p>
+                    </div>
+                    <span class="count"><span id="productCount">0</span> productos</span>
+                </div>
 
-            <div class="grid" id="productGrid"></div>
-        </section>
-    </main>
+                <div class="filters" id="categoryFilters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="3x3">3x3</button>
+                    <button class="filter-btn" data-filter="5x5">5x5</button>
+                    <button class="filter-btn" data-filter="2x2">2x2</button>
+                </div>
 
-    <footer class="footer">
-        <p>© <span id="year"></span> Speedcubes</p>
-    </footer>
-</div>
+                <div class="grid" id="productGrid"></div>
+            </section>
+        </main>
 
-<div id="imageModal" class="modal" aria-hidden="true">
-    <div class="modal-content">
-        <button id="closeModal" class="modal-close" aria-label="Cerrar">&times;</button>
-        <img id="modalImage" src="" alt="Imagen ampliada" />
+        <footer class="footer">
+            <p>© <span id="year"></span> Speedcubes</p>
+        </footer>
     </div>
-</div>
 
-<script src="./app.js"></script>
+    <div id="productDrawer" class="drawer-overlay" aria-hidden="true">
+        <div class="drawer">
+            <button id="closeDrawer" class="drawer-close" aria-label="Cerrar">&times;</button>
+            <div id="drawerBody"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
-</html>
 
+</html>
