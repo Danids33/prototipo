@@ -1,0 +1,54 @@
+{
+  "categorias": ["all", "3x3", "5x5", "2x2"],
+  "productos": [
+    {
+      "id": "gan-14-pro",
+      "nombre": "GAN 14 Pro 3×3 (MagLev)",
+      "marca": "GAN",
+      "etiquetas": ["3x3", "imantado", "premium", "profesional"],
+      "imagenUrl": "https://m.media-amazon.com/images/I/71KtIxuuGSL._SY500_.jpg",
+      "precio": 64.99
+    },
+    {
+      "id": "moyu-wr-m-2021",
+      "nombre": "MoYu WRM 2021 3×3",
+      "marca": "MoYu",
+      "etiquetas": ["3x3", "control", "liso"],
+      "imagenUrl": "https://www.thecubicle.com/cdn/shop/products/weilongwrm2021.jpg?v=1625685240&width=800",
+      "precio": 34.9
+    },
+    {
+      "id": "rs3m-v5-ballcore",
+      "nombre": "MoYu RS3M V5 (Ball-Core)",
+      "marca": "MoYu",
+      "etiquetas": ["3x3", "económico", "ball-core", "magnetico"],
+      "imagenUrl": "https://garacube.com/wp-content/uploads/2023/11/718Bi89lPoL.jpg",
+      "precio": 24.9
+    },
+    {
+      "id": "qiyi-tornado-v3-pioneer",
+      "nombre": "QiYi Tornado V3 (Pioneer)",
+      "marca": "QiYi",
+      "etiquetas": ["3x3", "silencioso", "pionero", "veloz"],
+      "imagenUrl": "https://cubestore.gr/wp-content/uploads/2023/03/X-Man-Tornado-V3-3x3-Magnetic-1-1024x683.jpg",
+      "precio": 44.0
+    },
+    {
+      "id": "gan-562-5x5",
+      "nombre": "GAN 562 5×5",
+      "marca": "GAN",
+      "etiquetas": ["5x5", "magnetico", "compacto"],
+      "imagenUrl": "https://garacube.com/wp-content/uploads/2024/10/GAN-562-5x5-Magnetic-UV-Coated-Stickerless-Bright.webp",
+      "precio": 26.5
+    },
+    {
+      "id": "moyu-weipo-wr-s-2x2",
+      "nombre": "MoYu WeiPo WR S 2x2",
+      "marca": "MoYu",
+      "etiquetas": ["2x2", "estable", "magnetico"],
+      "imagenUrl": "https://garacube.com/wp-content/uploads/2023/05/51UsC2zh6L._SL1000_.jpg",
+      "precio": 39.99
+    }
+  ]
+}
+

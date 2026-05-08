@@ -7,8 +7,19 @@
     <list default="true" id="8e85f60c-fdff-405c-af00-08d3e8343376" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/GAN 562 5x5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/MoYu RS3M V5 (Ball-Core).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/MoYu WRM 2021 3×3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/MoYu WeiPo WR S 2x2 (Magnetic).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/QiYi Tornado V3 (Pioneer).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gan 14 pro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gan-14-pro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gan-562-5x5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/moyu-rs3m-v5-ball-core.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/moyu-weipo-wr-s-2x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/qiyi-tornado-v3-pioneer.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +94,9 @@
       <updated>1776934408895</updated>
       <workItem from="1776934410031" duration="8450000" />
       <workItem from="1777035519502" duration="32000" />
+      <workItem from="1777035743228" duration="700000" />
+      <workItem from="1777037649047" duration="11000" />
+      <workItem from="1778138021841" duration="5541000" />
     </task>
     <servers />
   </component>
